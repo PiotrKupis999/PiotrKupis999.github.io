@@ -6,10 +6,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-body
-{
-    background-color: darkgrey;
-}
+
 
 .icon
 {
@@ -25,7 +22,7 @@ body
 
 .icon2
 {
-    color: rgb(0, 0, 0);
+    color: #0000ff;
     
     font-size: 15px;
 
@@ -39,7 +36,7 @@ body
 .bok
 {
     float: left;
-    background-color: #5c5c5c;
+    background: linear-gradient(to right, rgb(47, 38, 225), #0066ff);
     width: 300px;
     min-height: 1200px;
     padding: 10px;
@@ -57,14 +54,14 @@ body
     min-height: 1200px;
     padding: 10px;
     margin-top: 25px;
-    margin-left: 15px;
+    
     margin-bottom: 20px;
 }
 
 .name
 {
     font-family: 'Marcellus SC', sans-serif;
-    color: #000000;
+    color: #0000ff;
     background-color: #cacaca;
     font-size: 60px;
     margin-left: 20px;
@@ -131,7 +128,13 @@ body
     margin-left: 40px;
     
     float: left;
-    box-shadow: 0 0 4px 1px #ffffff;
+    box-shadow: 0 0 4px 3px #ffffff;
+}
+
+.profile:hover
+{
+    box-shadow: 0 0 10px 5px #000000;
+    cursor: pointer;
 }
 
 .text1
@@ -153,7 +156,7 @@ body
 .head2
 {
     font-family: 'Marcellus SC', sans-serif;
-    color: #000000;
+    color: #0000ff;
     margin-bottom: 20px;
     margin-top: 80px;
     font-size: 25px;
