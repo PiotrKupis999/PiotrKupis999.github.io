@@ -1,8 +1,22 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    background-color: #bfbfbf;
 }
 
 h1 {
     
     color:blue;
+}
+
+.prof
+{
+    display: block;
+    width: 150px;
+        
+    border-radius: 1000px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    float: left;
+    box-shadow: 0 0 4px 1px #808080;
 }
