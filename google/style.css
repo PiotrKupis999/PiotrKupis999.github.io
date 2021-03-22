@@ -12,8 +12,7 @@ body {
     font-size: 14px;
     font-family: arial,sans-serif;
     color: #222;
-  }
-
+}
 
 html {
     min-height: 100%; 
@@ -21,7 +20,6 @@ html {
     margin: 0;
     padding: 0;
 }
-
 
 .gora_zaloguj {
     height: 36px;
@@ -43,7 +41,6 @@ html {
     color: white;
     text-decoration: none; 
 }
-
 
 .points {
     float:right;
@@ -72,8 +69,6 @@ html {
     text-decoration: underline;
 }
 
-
-
 .gora {
     align-items: center;
     display: flex;
@@ -96,12 +91,12 @@ html {
 
 .logo_zdj {
     margin-top: auto;
-    max-height: 100vh;
+    max-height: auto;
     max-width: 100%;
     object-fit: contain;
     object-position: center bottom;
     width: auto;
-    height: 92px;
+    height: auto;
     aspect-ratio: auto 272 / 92;
     position: relative;
     bottom: -4px;
@@ -131,9 +126,6 @@ html {
     display: flex;
     
 }
-
-
-
 
 .szukaj_icon {
     display: flex;
@@ -219,9 +211,6 @@ input[type="image"] {
 .button:hover{
     border: 1px solid #DCDCDC;
 }
-
-    
-
 
 .link {
     padding: 0 3px;
