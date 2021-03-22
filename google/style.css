@@ -212,11 +212,7 @@ input[type="image"] {
     border: 1px solid #d3d3d3;
 }
 
-.link {
-    padding: 0 3px;
-    color: #1a0dab;
-    text-decoration: none;
-}
+
 .stopka {
     position: fixed;
     bottom: 0px;
@@ -225,11 +221,21 @@ input[type="image"] {
     color: #70757a;
     background: #f2f2f2;
     justify-content: space-evenly;
+    
 }
 
 .lacze {
     margin: 0;
     padding: 15px;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+}
+
+.lacze1 {
+    margin: 0;
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
 }
 
 .stopka1 {
@@ -249,7 +255,7 @@ input[type="image"] {
     position: relative;
 }
 
-.stopka2:hover{
+.lacze:hover{
     text-decoration: underline;
 }
 
