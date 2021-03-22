@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+  }
+
+body {
+    min-height: 100%; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #222;
+  }
+
+
+html {
+    min-height: 100%; 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.gora_zaloguj {
+    height: 36px;
+    width: 118.3px;
+    background: #1a73e8;
+    border: 1px solid transparent;
+    border: 0;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    line-height: 16px;
+    margin-left: 6px;
+    margin-right: 10px;
+    padding: 10px 13px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none; 
+}
+
+
+.points {
+    float:right;
+    height: 30px;
+    padding: 4px;
+    margin-left: 5px;
+    margin-right: 12px;
+    border-radius: 50%;
+}
+
+.points:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+    shape-outside: circle(20px);
+}
+
+.gora_napis {
+    color:rgba(34, 20, 20, 0.87);
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    padding-right: 15px;
+}  
+
+.gora_napis:hover {
+    text-decoration: underline;
+}
+
+
+
+.gora {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    white-space: nowrap;
+    padding: 8px;
+    margin-top: 4px;
+
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100vh - 560px);
+    width: 100%;
+
+}
+
+.logo_zdj {
+    margin-top: auto;
+    max-height: 100vh;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+    height: 92px;
+    aspect-ratio: auto 272 / 92;
+    position: relative;
+    bottom: -4px;
+
+}
+.srodek {
+    max-height: 160px;
+    padding: 20px;
+    padding-top: 26px;
+    position: relative;
+    bottom: -4px;
+}
+
+.szukaj {
+    margin-top: 6px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 46px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 582px;
+    flex: 1;
+    display: flex;
+    
+}
+
+
+
+
+.szukaj_icon {
+    display: flex;
+    align-items: center;
+    size: 5px;
+    width: 22px;
+    height: 22px;
+    margin-left: 14px;
+    position: relative;
+    bottom: -11px;
+    left: -1px;
+
+    
+}
+.wpis {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    height: 34px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+.klawa_icon {
+    vertical-align: middle;
+    position:relative;
+    height: 32px;
+    right: 15px;
+    margin-right: 20px;
+    padding-bottom: 2px;
+}
+
+.mic_icon {
+    vertical-align: middle;
+    position:relative;
+    height: 22px;
+    right: 15px;
+    margin-right: 10px;
+    top: 10px;
+}
+
+input[type="image"] {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+    padding-left: 4px;
+    
+}
+
+.button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    padding-top: 3.5px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 8px;
+}
+
+.button:hover{
+    border: 1px solid #DCDCDC;
+}
+
+    
+
+
+.link {
+    padding: 0 3px;
+    color: #1a0dab;
+    text-decoration: none;
+}
+.stopka {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 96px;
+    color: #70757a;
+    background: #f2f2f2;
+    justify-content: space-evenly;
+}
+
+.lacze {
+    margin: 0;
+    padding: 15px;
+}
+
+.stopka1 {
+    height: 50%;
+    width: 100%;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+    padding: 0 15px;
+}
+
+.stopka2 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.stopka2:hover{
+    text-decoration: underline;
+}
+
+.stopka2a {
+    display: flex;
+    padding-left: 1.3%;
+    align-self: flex-start;
+
+}
+
+.listek {
+    position: relative;
+    bottom: -15px;
+    right:-9px;
+}
+
+.stopka2b {
+    display: flex;
+    align-self: stretch;
+    position: relative;
+    left: -4.9%;
+
+}
+
+.stopka2c {
+    display: flex;
+    padding-right: 20px;
+    align-self: flex-end;
+    position: relative;
+    bottom: 1px;
+}
