@@ -71,11 +71,12 @@ html {
 
 .gora {
     align-items: center;
-    display: flex;
+    
+
     flex-direction: row-reverse;
     white-space: nowrap;
-    padding: 8px;
-    margin-top: 4px;
+    padding: 15px;
+    
 
 }
 .logo {
@@ -125,6 +126,12 @@ html {
     flex: 1;
     display: flex;
     
+}
+
+.szukaj:hover
+{
+    box-shadow: 0 0 5px 1px #e1e1e1;
+    cursor: pointer;
 }
 
 .szukaj_icon {
@@ -287,3 +294,4 @@ input[type="image"] {
     position: relative;
     bottom: 1px;
 }
+

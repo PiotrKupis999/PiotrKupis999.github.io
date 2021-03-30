@@ -1,0 +1,180 @@
+.stopka2 {
+    display: none;
+}
+
+
+.gora_napis {
+    display: none;
+}
+
+.mainn {
+    display: none;
+}
+
+.gora_zaloguj{
+    
+    display: none;
+    
+}
+.points{
+    display: none;
+}
+
+.gora {
+    flex-direction: row;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.logo_zdj {
+    display: flex;
+    margin-left: 1.5%;
+    margin-right: 2.5%;
+    height: 40px;
+    bottom: 2px;
+}
+
+.mic_icon {
+    vertical-align: middle;
+    position:relative;
+    height: 22px;
+    right: 15px;
+    margin-right: 2px;
+    top: 10px;
+}
+
+.szukaj_icon {
+    display: flex;
+    align-items: center;
+    size: 5px;
+    width: 25px;
+    height: 25px;
+    margin-left: 14px;
+    position: relative;
+    bottom: -9px;
+    left: -15px;
+}
+
+.szukaj {
+    margin-top: 6px;
+    background: #fff;
+    display: flex;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 46px;
+    margin: 0;
+    width: auto;
+    max-width: 700px;
+    flex: 1;
+    display: flex;
+    
+}
+
+
+
+.x {
+    display: flex;
+    align-items: center;
+    color: rgb(167, 167, 167);
+    font-size: 25px;
+    height: 40px;
+    margin-right: 14px;
+    position: relative;
+    bottom: -2px;
+    left: -30px;
+    
+}
+
+.kreska {
+
+    display: flex;
+    align-items: center;
+    color: rgb(167, 167, 167);
+    font-size: 25px;
+    height: 40px;
+    margin-right: 14px;
+    position: relative;
+    bottom: -2px;
+    left: -20px;
+
+}
+
+.kryteria {
+    margin-left: 193px;
+    margin-top: 22px;
+    margin-bottom: 5px;
+    
+    
+    
+    
+}
+
+.kryt1{
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    margin-left: 27px;
+    color: rgb(34, 106, 230);
+    
+}
+
+.kryt{
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    font-size: 15px;
+    margin-left: 27px;
+    color: rgb(123, 123, 123);
+    
+}
+
+.part1 {
+    display: flex;
+}
+
+.wynik {
+    
+    margin-left: 220px;
+    margin-top: 22px;
+    margin-bottom: 5px;
+}
+
+.link1 {
+    text-decoration: none;
+    color: black;
+}
+
+.link2 {
+    text-decoration: none;
+    color: rgb(121, 121, 121);
+    padding-left: 3px;
+}
+
+.triangle {
+    padding-left: 10px;
+    padding-top: 1px;
+    display: flex;
+    color: rgb(121, 121, 121);
+}
+
+.link {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.hiper_blue {
+    text-decoration: none;
+    color: rgb(0, 0, 225);
+    font-size: 20px;
+
+}
+
+.hiper_blue:hover{
+    text-decoration: underline;
+}
+
+.opis {
+    margin-top: 5px;
+    max-width: 550px;
+    line-height: 23px;
+}
