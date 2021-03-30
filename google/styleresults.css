@@ -38,7 +38,7 @@
     position:relative;
     height: 22px;
     right: 15px;
-    margin-right: 2px;
+    margin-right: 5px;
     top: 10px;
 }
 
@@ -59,6 +59,7 @@
     background: #fff;
     display: flex;
     border: 1px solid #dfe1e5;
+    
     box-shadow: none;
     border-radius: 24px;
     z-index: 3;
@@ -68,20 +69,25 @@
     max-width: 700px;
     flex: 1;
     display: flex;
-    
+    box-shadow: 0 0 5px 1px #ededed;
 }
 
-
+.klawa_icon {
+    border-left: 1px solid #dfe1e5;
+    margin-top: 6px;
+    padding-bottom: 8px;
+    padding-left: 17px;
+}
 
 .x {
     display: flex;
     align-items: center;
-    color: rgb(167, 167, 167);
-    font-size: 25px;
-    height: 40px;
-    margin-right: 14px;
+    
+    
+    height: 28px;
+    margin-right: 2px;
     position: relative;
-    bottom: -2px;
+    bottom: -9px;
     left: -30px;
     
 }
@@ -255,3 +261,117 @@
     bottom: -1px;
     left: -10px;
 }
+
+.spis {
+    margin-left: 350px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.numery {
+    margin-left: 392px;
+    margin-top: 5px;
+    font-size: 15px;
+    
+
+}
+
+.n1 {
+color: black;
+}
+
+.n {
+    margin-left: 16.1px;
+    color: rgb(29, 125, 210);
+
+}
+
+.g {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(29, 125, 210);
+    
+}
+
+.oc {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(186, 0, 0);
+}
+.oz {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 204, 0);
+}
+.g1 {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(29, 125, 210);
+}
+.l {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(48, 145, 0);
+}
+
+.e {
+    
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: rgb(186, 0, 0);
+}
+
+
+.stopka_gora {
+    display: flex;
+    margin-top: 30px;
+    padding-left: 200px;
+    
+    height: 40px;
+    text-decoration: none;
+    align-items: center;
+    font-size: 16px;
+    width: auto;
+    color: black;
+    position: relative;
+    border: 1px solid #cdcdcd;
+    background: rgb(248, 248, 248);
+
+}
+
+.stopka_dol {
+ 
+    display: flex;
+    margin-bottom: 20px;
+    
+    margin-left: 200px;
+    height: 40px;
+    text-decoration: none;
+    align-items: center;
+    font-size: 16px;
+    width: auto;
+    color: black;
+    position: relative;
+    background: rgb(248, 248, 248);
+
+}
+.element {
+    margin-left: 50px;
+    position: relative;
+    padding-top: 0.2em;
+    color: #808080;
+    text-decoration: none;
+}
+
+.element:hover {
+    color: rgb(89, 89, 89);
+    
+}
+
