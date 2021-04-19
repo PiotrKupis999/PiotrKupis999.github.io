@@ -69,16 +69,17 @@ html {
     text-decoration: underline;
 }
 
+
 .gora {
     align-items: center;
-    
-
+    display: flex;
     flex-direction: row-reverse;
     white-space: nowrap;
-    padding: 15px;
-    
+    padding: 8px;
+    margin-top: 4px;
 
 }
+
 .logo {
     display: flex;
     flex-direction: column;
@@ -101,6 +102,7 @@ html {
     aspect-ratio: auto 272 / 92;
     position: relative;
     bottom: -4px;
+    padding-bottom: 35px;
 
 }
 .srodek {
@@ -293,5 +295,21 @@ input[type="image"] {
     align-self: flex-end;
     position: relative;
     bottom: 1px;
+}
+
+.kryteria {
+    display:none;
+}
+
+.wynik {
+    display: none;
+}
+
+.na_dole {
+    display: none;
+}
+
+.part1 {
+    display: none;
 }
 

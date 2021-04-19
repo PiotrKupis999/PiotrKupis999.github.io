@@ -1,3 +1,6 @@
+
+
+
 .stopka2 {
     display: none;
 }
@@ -6,6 +9,7 @@
 .gora_napis {
     display: none;
 }
+
 
 .mainn {
     display: none;
@@ -22,6 +26,7 @@
 
 .gora {
     flex-direction: row;
+    min-width: 2000px;
     border-bottom: 1px solid #d3d3d3;
 }
 
@@ -31,6 +36,8 @@
     margin-right: 2.5%;
     height: 40px;
     bottom: 2px;
+    padding-bottom: 0px;
+    
 }
 
 .mic_icon {
@@ -52,6 +59,18 @@
     position: relative;
     bottom: -9px;
     left: -15px;
+}
+
+.gora {
+    align-items: center;
+    display: table;
+
+    flex-direction: row-reverse;
+    white-space: nowrap;
+    padding: 15px;
+    padding-top: 30px;
+    
+
 }
 
 .szukaj {
@@ -107,12 +126,10 @@
 }
 
 .kryteria {
+    display: flex;
     margin-left: 193px;
     margin-top: 22px;
     margin-bottom: 5px;
-    
-    
-    
     
 }
 
@@ -139,7 +156,7 @@
 }
 
 .wynik {
-    
+    display: table;
     margin-left: 220px;
     margin-top: 22px;
     margin-bottom: 5px;
@@ -375,3 +392,6 @@ color: black;
     
 }
 
+.na_dole {
+    display: table;
+}
