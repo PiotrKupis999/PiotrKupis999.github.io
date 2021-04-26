@@ -1,36 +1,36 @@
 
 
 
-.stopka2 {
+.results .stopka2 {
     display: none;
 }
 
 
-.gora_napis {
+.results .gora_napis {
     display: none;
 }
 
 
-.mainn {
+.results .mainn {
     display: none;
 }
 
-.gora_zaloguj{
+.results .gora_zaloguj{
     
     display: none;
     
 }
-.points{
+.results .points{
     display: none;
 }
 
-.gora {
+.results .gora {
     flex-direction: row;
     min-width: 2000px;
     border-bottom: 1px solid #d3d3d3;
 }
 
-.logo_zdj {
+.results .logo_zdj {
     display: flex;
     margin-left: 1.5%;
     margin-right: 2.5%;
@@ -40,7 +40,7 @@
     
 }
 
-.mic_icon {
+.results .mic_icon {
     vertical-align: middle;
     position:relative;
     height: 22px;
@@ -49,7 +49,7 @@
     top: 10px;
 }
 
-.szukaj_icon {
+.results .szukaj_icon {
     display: flex;
     align-items: center;
     size: 5px;
@@ -61,7 +61,7 @@
     left: -15px;
 }
 
-.gora {
+.results .gora {
     align-items: center;
     display: table;
 
@@ -73,7 +73,7 @@
 
 }
 
-.szukaj {
+.results .szukaj {
     margin-top: 6px;
     background: #fff;
     display: flex;
@@ -91,14 +91,14 @@
     box-shadow: 0 0 5px 1px #ededed;
 }
 
-.klawa_icon {
+.results .klawa_icon {
     border-left: 1px solid #dfe1e5;
     margin-top: 6px;
     padding-bottom: 8px;
     padding-left: 17px;
 }
 
-.x {
+.results .x {
     display: flex;
     align-items: center;
     
@@ -111,7 +111,7 @@
     
 }
 
-.kreska {
+.results .kreska {
 
     display: flex;
     align-items: center;
@@ -125,7 +125,7 @@
 
 }
 
-.kryteria {
+.results .kryteria {
     display: flex;
     margin-left: 193px;
     margin-top: 22px;
@@ -133,7 +133,7 @@
     
 }
 
-.kryt1{
+.results .kryt1{
     text-decoration: none;
     letter-spacing: 0.2px;
     font-size: 15px;
@@ -142,7 +142,7 @@
     
 }
 
-.kryt{
+.results .kryt{
     text-decoration: none;
     letter-spacing: 0.2px;
     font-size: 15px;
@@ -151,68 +151,68 @@
     
 }
 
-.part1 {
+.results .part1 {
     display: flex;
 }
 
-.wynik {
+.results .wynik {
     display: table;
     margin-left: 220px;
     margin-top: 22px;
     margin-bottom: 5px;
 }
 
-.link1 {
+.results .link1 {
     text-decoration: none;
     color: black;
 }
 
-.link2 {
+.results .link2 {
     text-decoration: none;
     color: rgb(121, 121, 121);
     padding-left: 3px;
 }
 
-.triangle {
+.results .triangle {
     padding-left: 10px;
     padding-top: 1px;
     display: flex;
     color: rgb(122, 121, 121);
 }
 
-.link {
+.results .link {
     display: flex;
     margin-bottom: 8px;
 }
 
-.hiper_blue {
+.results .hiper_blue {
     text-decoration: none;
     color: rgb(0, 0, 225);
     font-size: 20px;
 
 }
 
-.hiper_blue:hover{
+.results .hiper_blue:hover{
     text-decoration: underline;
 }
 
-.opis {
+.results .opis {
     margin-top: 5px;
     max-width: 550px;
     line-height: 23px;
 }
 
-.podobne {
+.results .podobne {
     font-size: 19px;
     margin-bottom: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.stopka {
+.results .stopka {
     display: none;
 }
 
-.szare {
+.results .szare {
     margin-top: 8px;
     background: rgb(248, 248, 248);
     display: flex;
@@ -230,7 +230,7 @@
 
 }
 
-.szare1 {
+.results .szare1 {
     margin-top: 8px;
     background: rgb(248, 248, 248);
     display: flex;
@@ -247,7 +247,7 @@
 
 }
 
-.szukaj_icon2{
+.results .szukaj_icon2{
     
     display: flex;
     align-items: center;
@@ -260,12 +260,12 @@
     left: -10px;
 }
 
-.wiersz {
+.results .wiersz {
     
     display: flex;
 }
 
-.podobne_wynik {
+.results .podobne_wynik {
     text-decoration: none;
     font-weight: bold;
     display: flex;
@@ -279,7 +279,7 @@
     left: -10px;
 }
 
-.spis {
+.results .spis {
     margin-left: 350px;
     margin-top: 30px;
     font-size: 30px;
@@ -287,7 +287,7 @@
 
 }
 
-.numery {
+.results .numery {
     margin-left: 392px;
     margin-top: 5px;
     font-size: 15px;
@@ -295,17 +295,17 @@
 
 }
 
-.n1 {
+.results .n1 {
 color: black;
 }
 
-.n {
+.results .n {
     margin-left: 16.1px;
     color: rgb(29, 125, 210);
 
 }
 
-.g {
+.results .g {
     
     font-family: 'Spartan', sans-serif;
     text-decoration: none;
@@ -313,32 +313,32 @@ color: black;
     
 }
 
-.oc {
+.results .oc {
     
     font-family: 'Spartan', sans-serif;
     text-decoration: none;
     color: rgb(186, 0, 0);
 }
-.oz {
+.results .oz {
     
     font-family: 'Spartan', sans-serif;
     text-decoration: none;
     color: rgb(255, 204, 0);
 }
-.g1 {
+.results .g1 {
     
     font-family: 'Spartan', sans-serif;
     text-decoration: none;
     color: rgb(29, 125, 210);
 }
-.l {
+.results .l {
     
     font-family: 'Spartan', sans-serif;
     text-decoration: none;
     color: rgb(48, 145, 0);
 }
 
-.e {
+.results .e {
     
     font-family: 'Spartan', sans-serif;
     text-decoration: none;
@@ -346,7 +346,7 @@ color: black;
 }
 
 
-.stopka_gora {
+.results .stopka_gora {
     display: flex;
     margin-top: 30px;
     padding-left: 200px;
@@ -363,7 +363,7 @@ color: black;
 
 }
 
-.stopka_dol {
+.results .stopka_dol {
  
     display: flex;
     margin-bottom: 20px;
@@ -379,7 +379,7 @@ color: black;
     background: rgb(248, 248, 248);
 
 }
-.element {
+.results .element {
     margin-left: 50px;
     position: relative;
     padding-top: 0.2em;
@@ -387,11 +387,11 @@ color: black;
     text-decoration: none;
 }
 
-.element:hover {
+.results .element:hover {
     color: rgb(89, 89, 89);
     
 }
 
-.na_dole {
+.results .na_dole {
     display: table;
 }
