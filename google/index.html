@@ -3,6 +3,8 @@
 <head>
     <script src="https://kit.fontawesome.com/dd0ff15abc.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="cities.js" defer></script>
+    <script src="vue.js" defer></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="styleresults.css">
@@ -14,8 +16,8 @@
 <body>
 
     <div>
-        <div id="app" :class="{results: googleSearch.length > 0}">
-
+        <div id="app">
+            <!--<div id="app" :class="{results: googleSearch.length > 0}">-->
             <div class="gora">
 
                 <a class="gora_zaloguj" href="">Zaloguj się</a>
@@ -304,6 +306,16 @@
                     <a href=""> <img class="klawa_icon" src="Keyboard.png"></a>
                     <a href=""> <img class="mic_icon" src="Google_mic.svg"></a>
                 </div>
+
+
+                <ul style="list-style-type:none;">
+                    <li class="pojedynczy" v-for="city in filteredCities">
+                        <div class="miasta" v-html="city.name">
+                        </div>
+                    </li>
+                </ul>
+
+
                 <div class="buttons">
                     <button class="button">Szukaj w Google</p>
                         <button class="button">Szczęśliwy traf</p>
@@ -336,17 +348,6 @@
             </div>
         </div>
     </div>
-
-
-    <script>
-        var app = new Vue({
-            el: "#app",
-            data: {
-                googleSearch: "",
-
-            }
-        });
-    </script>
 
 </body>
 
