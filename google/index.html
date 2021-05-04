@@ -16,8 +16,8 @@
 <body>
 
     <div>
-        <div id="app">
-            <!--<div id="app" :class="{results: googleSearch.length > 0}">-->
+        <div id="app" :class="[googleSearch.length != 0 && isActive == 1 ? 'results' : isActive = 0 ]">
+
             <div class="gora">
 
                 <a class="gora_zaloguj" href="">Zaloguj się</a>
@@ -30,7 +30,7 @@
                     <img class="logo_zdj" src="Google_2015_logo.svg">
                     <div class="szukaj">
 
-                        <input class="wpis" type="search" v-model="googleSearch">
+                        <input class="wpis" type="search" v-model="googleSearch" ref="dla_results">
 
                         <a href=""> <img class="x" src="xxx.svg"></a>
 
@@ -302,20 +302,22 @@
                 </div>
                 <div class="szukaj">
                     <a href=""> <img class="szukaj_icon" src="Google_Magnifying_Glass.svg"></a>
-                    <input class="wpis" type="search" v-model="googleSearch">
+                    <input class="wpis" type="search" v-model="googleSearch" ref="dla_start">
                     <a href=""> <img class="klawa_icon" src="Keyboard.png"></a>
                     <a href=""> <img class="mic_icon" src="Google_mic.svg"></a>
                 </div>
+                <div id="app1" :class="{nowe: googleSearch.length > 0}">
+                    <div>
+                        <ul>
+                            <li class="miasto" v-for="city in filteredCities" v-on:click="autocomplete(city)">
 
+                                <div class="miasta" v-html="wytluszczenie(city.name)" v-on:click="czy_jest()">
 
-                <ul style="list-style-type:none;">
-                    <li class="pojedynczy" v-for="city in filteredCities">
-                        <div class="miasta" v-html="city.name">
-                        </div>
-                    </li>
-                </ul>
-
-
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="buttons">
                     <button class="button">Szukaj w Google</p>
                         <button class="button">Szczęśliwy traf</p>

@@ -313,3 +313,53 @@ input[type="image"] {
     display: none;
 }
 
+ul { 
+    list-style-image: url('Google_Magnifying_Glass.svg'); 
+    margin-top: 6px;
+    background: #fff;
+    
+    
+    box-shadow: none;
+    border-radius: 28px;
+    
+    
+    margin: 0 auto;
+    width: auto;
+    max-width: 582px;
+    
+    
+}
+
+.miasta {
+    padding-top: -5px;
+}
+
+
+.nowe ul { 
+    list-style-image: url('Google_Magnifying_Glass.svg'); 
+    margin-top: 6px;
+    background: #fff;
+    
+    border: 1px solid #dfe1e5;
+    
+    box-shadow: 0 0 5px 2px #e1e1e1;
+    
+    border-radius: 24px;
+    
+    font-size: 17px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 582px;
+    
+    
+}
+
+.nowe li {
+    margin: 0 0 10px 0;
+
+}
+
+.nowe li:hover {
+    background-color: whitesmoke;
+
+}
