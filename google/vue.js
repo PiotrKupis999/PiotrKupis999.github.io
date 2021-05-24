@@ -4,7 +4,14 @@ var app = new Vue({
         googleSearch: "",
         cities: window.cities,
         isActive: 0,
-        control: 0
+        control: 0,
+        current: -1,
+        update_filteredCities:true,
+        focused: false,
+        change: false,
+        
+        autocompleterIsActive: false,
+        
     },
     updated() {
         this.$nextTick(() => {
@@ -30,9 +37,20 @@ var app = new Vue({
                 else {
                     return miasta;
                 }
+                this.current=-1;
             }
         }
     },
+
+    watch : {
+        googleSearch() {
+            console.log('this.autocompleterIsActive: ', this.autocompleterIsActive);
+            if (this.autocompleterIsActive) {
+                return;
+            }
+        }
+    },
+
     methods: {
         autocomplete(city) {
             this.googleSearch = city.name;
@@ -49,10 +67,43 @@ var app = new Vue({
             }
             return a;
         },
+
         czy_jest: function()
         {
             this.isActive = 1;
+        },
+
+        
+
+        goTo(index) {
+            if (!this.autocompleterIsActive) {
+                index = 0;
+            }
+
+            if (index > this.filteredCities.length - 1) {
+                index = 0;
+            } else if (index < 0) {
+                index = this.filteredCities.length - 1;
+            }
+
+            this.autocompleterIsActive = true;
+            this.isActive = index;
+            this.googleSearch = this.filteredCities[index].name;
+        },
+        goToResults(name) {
+            this.autocompleterIsActive = true;
+
+            if (name) {
+                this.googleSearch = name;
+            }
+
+            this.isOnResults = true;
+            this.filteredCities = [];
+            this.$nextTick(() => {
+                this.autocompleterIsActive = false;
+            });
         }
+    
     },
 
 });

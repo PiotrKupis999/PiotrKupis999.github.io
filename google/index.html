@@ -30,7 +30,13 @@
                     <img class="logo_zdj" src="Google_2015_logo.svg">
                     <div class="szukaj">
 
-                        <input class="wpis" type="search" v-model="googleSearch" ref="dla_results">
+                        <input class="wpis" 
+                        type="text" 
+                        v-model="googleSearch" 
+                        ref="dla_results" 
+                        @keyup.down="goTo(isActive + 1)"
+                        @keyup.up="goTo(isActive - 1)"
+                        @keyup.enter="goToResults()">
 
                         <a href=""> <img class="x" src="xxx.svg"></a>
 
@@ -302,14 +308,20 @@
                 </div>
                 <div class="szukaj">
                     <a href=""> <img class="szukaj_icon" src="Google_Magnifying_Glass.svg"></a>
-                    <input class="wpis" type="search" v-model="googleSearch" ref="dla_start">
+                    <input class="wpis"
+                     type="text"
+                     v-model="googleSearch" 
+                    ref="dla_start" 
+                    @keyup.down="goTo(activeResult + 1)"
+                    @keyup.up="goTo(activeResult - 1)"
+                    @keyup.enter="goToResults()">
                     <a href=""> <img class="klawa_icon" src="Keyboard.png"></a>
                     <a href=""> <img class="mic_icon" src="Google_mic.svg"></a>
                 </div>
                 <div id="app1" :class="{nowe: googleSearch.length > 0}">
                     <div>
                         <ul>
-                            <li class="miasto" v-for="city in filteredCities" v-on:click="autocomplete(city)">
+                            <li :class="{miasto : autocompleterIsActive && activeResult === index}" v-for="(city, index) in filteredCities" v-on:click="autocomplete(city)">
 
                                 <div class="miasta" v-html="wytluszczenie(city.name)" v-on:click="czy_jest()">
 

@@ -1,0 +1,150 @@
+
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="cities.js"></script>
+    </head>
+    <body>
+        <div id="vue-app" :class="cssClasses">
+            <div id="top">
+                <div id="menu">Menu</div>
+                <div id="google-logo">Google</div>
+                <div id="search">
+                    <div class="autocompleter">
+                        <input 
+                            v-model="googleSearch"
+                            type="text"
+                            @keyup.down="goTo(activeResult + 1)"
+                            @keyup.up="goTo(activeResult - 1)"
+                            @keyup.enter="goToResults()">
+                        <div class="autocompleter-results" >
+                            <div class="result city"
+                                v-for="(city, index) in filteredCities"
+                                :class="{active : autocompleterIsActive && activeResult === index}"
+                                @click="goToResults(city.name)">
+                                <span v-html="city.nameHtml"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="results">RESULTS!!!</div>
+        </div>
+        <script type="text/javascript">
+            var app = new Vue({
+                el: '#vue-app',
+                data: {
+                    isOnResults: false,
+                    activeResult: 0,
+                    autocompleterIsActive: false,
+                    googleSearch: '',
+                    filteredCities: [],
+                    cities: window.cities.map((cityData) => {
+                        cityData.nameLowerCase = cityData.name.toLowerCase();
+                        return cityData;
+                    })
+                },
+                watch : {
+                    googleSearch() {
+                        if (this.autocompleterIsActive) {
+                            return;
+                        }
+                        if (this.googleSearch.length === 0) {
+                            filteredCities = [];
+                            return;
+                        }
+                        let returnedCities = [];
+                        let searchLowerCase = this.googleSearch.toLowerCase();
+
+                        this.cities.forEach((cityData) => {
+                            if (returnedCities.length === 10 || !cityData.nameLowerCase.includes(searchLowerCase)) {
+                                return;
+                            }
+                            returnedCities.push({
+                                name: cityData.name,
+                                nameHtml: cityData.nameLowerCase.replace(searchLowerCase, (match) => {
+                                    return '<span class="bold">' + match + '</span>';
+                                })
+                            })
+                        });
+                        
+                        this.filteredCities = returnedCities;
+                    }
+                },
+                computed : {
+                    cssClasses() {
+                        return {
+                            results: this.isOnResults
+                        }
+                    }
+                },
+                methods : {
+                    goTo(index) {
+                        if (!this.autocompleterIsActive) {
+                            index = 0;
+                        }
+
+                        if (index > this.filteredCities.length - 1) {
+                            index = 0;
+                        } else if (index < 0) {
+                            index = this.filteredCities.length - 1;
+                        }
+                        
+                        this.autocompleterIsActive = true;
+                        this.activeResult = index;
+                        this.googleSearch = this.filteredCities[index].name;
+                    },
+                    goToResults(name) {
+                        this.autocompleterIsActive = true;
+
+                        if (name) {
+                            this.googleSearch = name;
+                        }
+
+                        this.isOnResults = true;
+                        this.filteredCities = [];
+                        this.$nextTick(() => {
+                            this.autocompleterIsActive = false;
+                        });
+                    }
+                }
+            });
+        </script>
+        <style>
+            #top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            #vue-app.results #top {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            #vue-app.results #menu {
+                align-self: flex-start;
+                order: 2;
+            }
+            #vue-app.results #results {
+                display: flex;
+            }
+            #menu {
+                align-self: flex-end;
+            }
+            #results {
+                display: none;
+            }
+            .autocompleter .autocompleter-results .result:hover {
+                border-left: 5px solid blue;
+                cursor: pointer;
+            }
+            .autocompleter .autocompleter-results .result.active {
+                background-color: gray;
+            }
+            .bold {
+                font-weight: bold;
+            }
+        </style>
+    </body>
+</html>

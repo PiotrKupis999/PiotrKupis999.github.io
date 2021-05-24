@@ -40,6 +40,7 @@ html {
     border-radius: 4px;
     color: white;
     text-decoration: none; 
+    
 }
 
 .points {
@@ -362,4 +363,8 @@ ul {
 .nowe li:hover {
     background-color: whitesmoke;
 
+}
+
+.main .nowe .result.active {
+    background-color: gray;
 }
