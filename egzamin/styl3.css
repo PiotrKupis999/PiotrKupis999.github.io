@@ -2,6 +2,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
     margin: 0 auto;
+    width: 210mm;
+    height: 297mm;
+}
+
+#cale{
+    width: 210mm;
+    height: 297mm;
 }
 
 #baner-lewy, #blok-lewy{
@@ -51,8 +58,6 @@ table, td{
     border: 1px solid olivedrab;
     color: olivedrab;
     padding: 10px;
-    height: 12px;
-    width: 30%;
     text-align: center;
 }
 
